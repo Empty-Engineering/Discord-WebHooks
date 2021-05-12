@@ -11,12 +11,15 @@ def osDetect():
 	if missing:
 		os.system("python3 -m pip install requests")
 	
-webHook = 'https://discordapp.com/api/webhooks/842058306364768327/-CDTIr60FGQOVdD-i1KBan6RTWA8nnITk79Jl72kPNhZi7Uv-jFXAxqA795FVhOrDa-5'def accept():
+webHook = 'https://discordapp.com/api/webhooks/842058306364768327/-CDTIr60FGQOVdD-i1KBan6RTWA8nnITk79Jl72kPNhZi7Uv-jFXAxqA795FVhOrDa-5'
+def accept():
 	eula = input("Would you like to send a message? ")
 	if eula.lower() == "yes" or eula.lower() == "y":
 		return True
 	else:
-		return Falsedef post(accept):
+		return False
+	
+def post(accept):
 	if accept == True:
 		import requests
 		messageContent = input("Enter message here: ")
